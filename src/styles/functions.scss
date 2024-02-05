@@ -1,0 +1,23 @@
+@use "scss-variables";
+@use "sass:math";
+
+// px to rem
+@function rem($px) {
+	@return math.div($px, 16) * 1rem;
+}
+
+// px to em
+@function em($px) {
+	@return math.div($px, 16) * 1em;
+}
+
+// dynamic resizing
+@function resize($min, $max, $type) {
+	$addSize: math.div($max, scssVariables.$container-width) * 100vw;
+
+	@if $type == rem {
+		@return clamp(rem($min), $addSize, rem($max));
+	} @else if $type == em {
+		@return clamp(em($min), $addSize, em($max));
+	}
+}

@@ -1,0 +1,16 @@
+@use "css-variables";
+@use "./styles/reset.scss";
+
+.main-body {
+	font-family: var(--font-family);
+	font-size: var(--font-size);
+	font-weight: var(--font-weight);
+	line-height: var(--line-height);
+	background-color: var(--color-secondary);
+	color: var(--color-primary);
+}
+
+// scroll lock
+.lock {
+	overflow: hidden;
+}

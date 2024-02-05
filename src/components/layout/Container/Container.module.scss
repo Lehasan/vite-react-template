@@ -1,0 +1,8 @@
+@use "scssVariables";
+@use "functions";
+
+.container {
+	max-width: functions.rem(scssVariables.$container-width);
+	padding: 0 functions.rem(scssVariables.$container-padding);
+	margin: 0 auto;
+}

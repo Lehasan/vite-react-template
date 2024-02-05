@@ -1,0 +1,11 @@
+// container
+$container: 1220;
+$container-padding: 15;
+$container-width: calc($container + ($container-padding * 2));
+
+// screen width
+$mobile-s: 20em;
+$mobile-m: 23.437em;
+$mobile-l: 26.562em;
+$tablet: 48em;
+$laptop: 64em;
