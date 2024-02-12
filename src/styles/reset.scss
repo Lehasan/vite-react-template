@@ -4,6 +4,7 @@
 	font-family: inherit;
 	font-size: inherit;
 	font-weight: inherit;
+	line-height: inherit;
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -15,8 +16,15 @@ img {
 	vertical-align: top;
 }
 
+ol,
 ul {
 	list-style: none;
+}
+
+input,
+textarea {
+	width: 100%;
+	outline: none;
 }
 
 cite {
@@ -33,6 +41,8 @@ a {
 }
 
 button {
+	text-align: center;
+	background-color: transparent;
 	cursor: pointer;
 }
 
