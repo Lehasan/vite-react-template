@@ -8,6 +8,11 @@
 	line-height: var(--line-height);
 	background-color: var(--color-secondary);
 	color: var(--color-primary);
+
+	a:focus-visible,
+	button:focus-visible {
+		outline: var(--focus-visible-outline);
+	}
 }
 
 // scroll lock
