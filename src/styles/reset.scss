@@ -21,7 +21,10 @@ ul {
 	list-style: none;
 }
 
-input,
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="password"],
 textarea {
 	width: 100%;
 	outline: none;
